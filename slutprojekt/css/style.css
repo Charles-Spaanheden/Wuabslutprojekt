@@ -1,0 +1,39 @@
+.grid {
+    grid-template-rows: 22.5vh 15vh 90vh 22.5vh;
+    grid-template-columns: 95vw;
+    display: grid;
+    grid-template-areas: 
+    'hed'
+    'nav'
+    'sec'
+    'fot';
+    gap: 10px;
+    justify-content: center;
+    align-content: space-evenly;
+
+    height: 150vh;
+}
+
+.hed {
+grid-area: hed;
+border: solid;
+background-color: #2E3946;
+}
+
+.nav {
+grid-area: nav;
+border: solid;
+text-align: center;
+padding: 30px;
+}
+
+.sec {
+grid-area: sec;
+border: solid;
+}
+
+.fot {
+grid-area: fot;
+border: solid;
+background-color: #2E3946;
+}
