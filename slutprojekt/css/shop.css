@@ -1,6 +1,6 @@
 .grid {
-    grid-template-rows: repeat(6, 30vh);
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 40% 10% 30% 30% 30% 15%;
+    grid-template-columns: 24% 24% 24% 24%;
     display: grid;
     grid-template-areas: 
     'hed hed hed hed'
@@ -12,7 +12,17 @@
     gap: 10px;
     justify-content: center;
     align-content: space-evenly;
-    height: 150vh;
+    height: 170vh;
+}
+
+.wrapper  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3D4D61;
+    margin: 0;
 }
 
 #itemgrid {
@@ -21,6 +31,25 @@
     grid-template-areas:
     'img'
     'txt';
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.header {
+grid-area: hed;
+background-color: #2B3036;
+left: 0;
+right: 0;
+}
+
+.nav {
+grid-area: nav;
+background-color: #2B3036;
+}
+
+.footer {
+grid-area: fot;
+background-color: #2B3036;
 }
 
 .it1 {
